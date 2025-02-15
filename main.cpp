@@ -45,7 +45,7 @@ int main()
 {
     init_trie(oTrie);
     
-    constexpr std::string_view file_path = "C:\\Users\\iliyan\\source\\repos\\auto_complete\\search_box.txt";
+    constexpr std::string_view file_path = {text_file_path};
     using namespace std::chrono_literals;
     file_watcher watcher(file_path, 100ms);
     watcher.run(foo);
